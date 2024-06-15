@@ -1,0 +1,14 @@
+numpy
+matplotlib
+tqdm
+gym
+scipy
+pandas
+setuptools
+argparse
+torch
+minigrid
+stable_baselines3
+plotly
+requests
+scikit-learn
