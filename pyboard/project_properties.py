@@ -29,6 +29,7 @@ project_path = Path(source_package).parent
 # --------------------------------------------
 resources_dir = Path(project_path, 'resources')
 data_dir = Path(project_path, 'data')
+model_dir = Path(project_path, 'models')
 doc_dir = Path(project_path, 'docs')
 profiles_dir = Path(data_dir, 'profiles')
 
@@ -44,7 +45,6 @@ config_dir = Path(project_path, 'configs')
 # Directories to programs outputs and generated artefacts
 # --------------------------------------------
 output_dir = Path(project_path, 'output')
-model_dir = Path(output_dir, 'models')
 env_dir = Path(output_dir, 'envs')
 island_dir = Path(output_dir, 'island')
 exps_dir = Path(output_dir, 'exps')

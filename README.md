@@ -20,8 +20,42 @@ pip install transformers datasets evaluate
 
 # Under-the-hood
 
+## Available Models
+
+The models available for us to work with were chosen to meet several criteria:
+
+- Accessible locally
+- Open-source
+- Free to use
+- Sufficiently capable
+
+Apart from the last criteria, these basically boil down to that we want to be able to host the model on our local system. We don't want to make API calls to external models because, well, that typically costs money.
+
+### [LLama](https://llama.meta.com/)
+
+The first set of models available to use are the Meta AI LLMs, Llama. Specifically, Llama2, Llama3, and CodeLlama. To download the weights for these models, you will have to go to their site and accept their license. This wil give you a unique url you will have to pass to their download scripts. The actual scripts are included in the scripts directory here for convenience along with a [python version](scripts/llama_download/llama_download.py) I've written to make them OS-agnostic.
+
+> Please save copies of the unique custom URLs provided above, they will remain valid for 24 hours to download each model up to 5 times, and requests can be submitted multiple times. An email with the download instructions will also be sent to the email address you used to request the models.
+
+#### [Getting Started with Meta Llama](https://llama.meta.com/docs/get-started/)
+
+> This guide provides information and resources to help you set up Llama including how to access the model, hosting, how-to and integration guides. Additionally, you will find supplemental materials to further assist you while building with Llama.
+
+#### [Responsible Use Guide](https://llama.meta.com/responsible-use-guide/)
+
+> The Responsible Use Guide is a resource for developers that provides best practices and considerations for building products powered by large language models (LLM) in a responsible manner, covering various stages of development from inception to deployment.
+
+#### [Llama3](https://github.com/meta-llama/llama3)
+
+The linked repo goes over a minimal example of loading Llama3 models and running inference. [This repo](https://github.com/meta-llama/llama-recipes) has a more expansive library of examples on how to run and use Llama3.
+
+#### [Llama2](https://github.com/meta-llama/llama)
+
+#### [CodeLlama](https://github.com/meta-llama/codellama)
+
 ## Learning Resources
 
+- [Prompt Engineering](https://www.coursera.org/specializations/prompt-engineering)
 - [Host Ai Locally - Easy Method for LLMs](https://www.youtube.com/watch?v=L12865sEB-o)
 - [LM Studio Server](https://lmstudio.ai/docs/local-server)
 - [Unleash the Power of Local Open Source LLM Hosting](https://yattishr.medium.com/unleash-the-power-of-local-open-source-llm-hosting-e33bf6a9679f)
@@ -32,6 +66,12 @@ pip install transformers datasets evaluate
 - [GGUF](https://huggingface.co/docs/hub/en/gguf)
 - [koboldcpp](https://github.com/LostRuins/koboldcpp)
 - [ollama](https://ollama.com/)
+- [OLMo](https://github.com/allenai/OLMo)
+- [OLMo-Eval](https://github.com/allenai/OLMo-Eval)
+- [WildBench](https://github.com/allenai/WildBench)
+- [Introducing BLOOM](https://bigscience.huggingface.co/blog/bloom)
+- [Exploring BLOOM](https://www.datacamp.com/blog/exploring-bloom-guide-to-multilingual-llm)
+- [BLOOM](https://huggingface.co/bigscience/)
 
 ## Huggingface
 
